@@ -1,0 +1,30 @@
+###사원 등록
+POST localhost:8080/employees
+Content-Type: application/json
+
+{
+  "employeeNumber": 20209999,
+  "name": "이현호"
+}
+
+###사원 전체조회
+GET localhost:8080/employees
+Content-Type: application/json
+
+###사원 단건조회
+GET localhost:8080/employees/20209998
+Content-Type: application/json
+
+###사원 수정
+PUT localhost:8080/employees/20209999
+Content-Type: application/json
+
+{
+  "employeeNumber": 20209998,
+  "name": "삼현호"
+}
+
+###사원 삭제
+DELETE localhost:8080/employees/2020
+Content-Type: application/json
+

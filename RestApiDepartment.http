@@ -1,0 +1,29 @@
+###부서 등록
+POST localhost:8080/departments
+Content-Type: application/json
+
+{
+  "departmentCode": "L9999",
+  "name": "백엔드99팀"
+}
+
+###부서 전체조회
+GET localhost:8080/departments
+Content-Type: application/json
+
+###부서 단건조회
+GET localhost:8080/departments/L1004
+Content-Type: application/json
+
+###부서 수정
+PUT localhost:8080/departments/L9999
+Content-Type: application/json
+
+{
+  "departmentCode": "L9998",
+  "name": "백엔드98팀"
+}
+
+###부서 삭제
+DELETE localhost:8080/departments/L1004
+Content-Type: application/json
